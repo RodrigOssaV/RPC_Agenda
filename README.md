@@ -1,6 +1,6 @@
 # RPC_Agenda
 
-Proyecto para el ramo Sistema Distribuidos de sistema RPC.
+Proyecto realizado para el ramo Sistemas Distribuidos, UCSC. 
 
 ## Pre-Requisitos
 
@@ -32,7 +32,7 @@ Proyecto para el ramo Sistema Distribuidos de sistema RPC.
 - Para el servidor
 >> pip install spyne
 
->> pip install alxml
+>> pip install lxml
 - para el cliente
 >> pip install Flask
 
