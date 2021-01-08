@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color: #27AE60">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Priority Things</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/service5">Listar Recordatorios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    {% block content %}
+      {% from 'macros.html' import render_field %}
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% for value in data %}
+          <div class="card" style="width: 18rem;">
+            <img src="../../static/img/calen.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nuevo Recordatorio</p>
+              <p class="card-text">Fecha: {{value[0]}}/{{value[1]}}/{{value[2]}}</p>
+              <p class="card-text">Recordatorio: {{value[3]}}</p>
+            </div>
+          </div>
+          <br>
+          {% endfor %}
+        </div>
+      </div>
+    {% endblock %}
+  </body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</html>
