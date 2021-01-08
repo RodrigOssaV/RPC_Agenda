@@ -12,7 +12,7 @@ Proyecto para el ramo Sistema Distribuidos de sistema RPC.
 
 - Asegurarse de tener instalado python3
 >>python3 --version
-- Si no tiene instalado Python, instale por terminalsi se encuentra en Ubuntu
+- Si no tiene instalado Python, instale por terminal
 >>sudo apt-get install python3
 - Instale un entorno virtual 
 >> sudo apt-get install python-virtualenv
@@ -31,9 +31,11 @@ Proyecto para el ramo Sistema Distribuidos de sistema RPC.
 - Una vez en su entorno virtual, deberá instalar los siguientes paquetes.
 - Para el servidor
 >> pip install spyne
+
 >> pip install alxml
 - para el cliente
 >> pip install Flask
+
 >> pip install flask-wtf
 
 ## Ejecutar el Cliente y Servidor
